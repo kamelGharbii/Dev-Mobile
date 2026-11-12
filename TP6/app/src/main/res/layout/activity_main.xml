@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f8f9fa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Titre -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Système de Commande"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2c3e50"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp" />
+
+        <!-- Section Menu Principal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Principal (Choix unique)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#34495e"
+            android:layout_marginBottom="15dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="#ffffff"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <RadioButton
+                android:id="@+id/radioPizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pizza - 10 DT"
+                android:textSize="18sp"
+                android:textColor="#2c3e50"
+                android:padding="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ecf0f1"
+                android:layout_marginVertical="8dp" />
+
+            <RadioButton
+                android:id="@+id/radioBurger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Burger - 8 DT"
+                android:textSize="18sp"
+                android:textColor="#2c3e50"
+                android:padding="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ecf0f1"
+                android:layout_marginVertical="8dp" />
+
+            <RadioButton
+                android:id="@+id/radioSalade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salade - 6 DT"
+                android:textSize="18sp"
+                android:textColor="#2c3e50"
+                android:padding="12dp" />
+
+        </RadioGroup>
+
+        <!-- Section Suppléments -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suppléments (Choix multiples)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#34495e"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="30dp">
+
+            <CheckBox
+                android:id="@+id/checkFromage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fromage (+2 DT)"
+                android:textSize="16sp"
+                android:textColor="#2c3e50"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkSauce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sauce spéciale (+1 DT)"
+                android:textSize="16sp"
+                android:textColor="#2c3e50"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkFrites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frites (+3 DT)"
+                android:textSize="16sp"
+                android:textColor="#2c3e50"
+                android:padding="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoisson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boisson (+2 DT)"
+                android:textSize="16sp"
+                android:textColor="#2c3e50"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <!-- Prix Total -->
+        <TextView
+            android:id="@+id/textPrixTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prix Total: 0 DT"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#e74c3c"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Bouton Commander -->
+        <Button
+            android:id="@+id/buttonCommander"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Commander"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="#27ae60"
+            android:textColor="#ffffff"
+            android:padding="16dp"
+            android:elevation="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
