@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">appmoyenne</string>
+    <string name="veuillez_remplir">Veuillez remplir tous les champs</string>
+    <string name="erreur_note_invalide">Erreur: Les notes doivent être entre 0 et 20</string>
+    <string name="erreur_saisie_nombre">Erreur: Veuillez saisir des nombres valides</string>
+    <string name="moyenne_resultat">Moyenne: %.2f</string>
+</resources>
